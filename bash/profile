@@ -1,0 +1,9 @@
+export HISTFILESIZE=9000000000
+export HISTSIZE=9000000
+export HISTIGNORE="&:ls:[bf]g:exit"
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+shopt -s histappend                      # append to history, don't overwrite it
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+export EDITOR=vim
